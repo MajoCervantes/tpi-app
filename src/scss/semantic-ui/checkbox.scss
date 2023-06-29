@@ -5,3 +5,11 @@
 		font-weight: bold;
 	}
 }
+
+@media screen and (min-width: 760px) {
+	.ui.checkbox {
+		> label {
+			font-size: 14px !important;
+		}
+	}
+}

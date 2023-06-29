@@ -29,9 +29,8 @@ const BasicModal = ({ show, onClose, isOpen, isClosing }: Props) => {
 				[styles.slideIn]: isOpen,
 				[styles.slideOut]: isClosing,
 			})}>
-			<Icon name='close' onClick={onClose} />
-
 			<Modal.Header className={styles.header}>
+				<Icon name='close' onClick={onClose} />
 				<h2>Bienvenido,</h2>
 				<h2>
 					{name} {lastName}

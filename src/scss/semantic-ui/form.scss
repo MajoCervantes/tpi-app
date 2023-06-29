@@ -19,7 +19,6 @@
 				&:active,
 				&:focus {
 					border-color: $border;
-					
 				}
 			}
 		}
@@ -51,5 +50,46 @@
 		padding: 15.5px 30px;
 		border-radius: 10px;
 		box-shadow: 0px 10px 8px 4px $shadow;
+	}
+}
+
+@media screen and (min-width: 760px) {
+	.ui.form {
+		margin-bottom: 20px;
+
+
+		.field {
+			.ui.input {
+				width: 100% !important;
+				input {
+					&:hover,
+					&:active,
+					&:focus {
+						border-color: $border;
+					}
+				}
+			}
+			> label {
+				color: $text-primary !important;
+			}
+		}
+
+		.ui.icon.input {
+			color: $text-primary !important;
+
+			> i.icon:not(.link) {
+				pointer-events: auto !important;
+			}
+		}
+
+
+		.ui.button[type='submit'] {
+			width: 50%;
+			box-shadow: none;
+			margin: 0 auto;
+			&:hover, &:active, :focus {
+				box-shadow: 0px 10px 8px 4px $shadow;
+			}
+		}
 	}
 }

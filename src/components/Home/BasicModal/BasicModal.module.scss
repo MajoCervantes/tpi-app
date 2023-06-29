@@ -22,6 +22,11 @@
 		color: $text-tertiary;
 		text-transform: capitalize;
 	}
+	> i {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
 }
 
 .content {
@@ -91,5 +96,28 @@
 		100% {
 			transform: translateX(-100%);
 		}
+	}
+}
+
+@media screen and (min-width: 760px) {
+	.modal {
+		padding-top: 20px;
+	}
+
+	.header {
+		> h2 {
+			&:last-of-type {
+				margin-bottom: 10px;
+			}
+		}
+		> span {
+			font-size: 14px;
+		}
+	}
+
+	.footer {
+		font-size: 12px;
+		position: absolute;
+		bottom: 15px;
 	}
 }

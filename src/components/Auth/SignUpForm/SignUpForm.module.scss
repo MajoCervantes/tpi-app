@@ -1,33 +1,55 @@
 @import '@/scss/colors.scss';
 
 .checkboxContainer {
-  display: flex;
-  margin-top: 30px;
-  font-size: 12px;
-  width: 100%;
+	display: flex;
+	margin-top: 30px;
+	font-size: 12px;
+	width: 100%;
 }
 
 .label {
-  color: #888fb0;
-  >a {
-    color: $text-secondary !important;
-    text-decoration: underline;
-    font-weight: bold;
-    margin-left: 2px;
-  }
+	color: #888fb0;
+	> a {
+		color: $text-secondary !important;
+		text-decoration: underline;
+		font-weight: bold;
+		margin-left: 2px;
+	}
 }
 
 .nationality {
-  margin-top: 15px !important;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+	margin-top: 15px !important;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 
-  >div {
-    >label {
-      font-size: 15px !important;
-      font-weight: 400 !important;
-    }
+}
+.nationalityContainer {
+  > label {
+    font-size: 15px !important;
+    font-weight: 400 !important;
   }
+}
+
+@media screen and (min-width: 760px) {
+	.checkboxContainer {
+		justify-content: center;
+		margin-top: 50px;
+		font-size: 14px;
+	}
+
+  .nationalityContainer {
+    margin: 20px 0 30px 0;
+  }
+
+
+	.nationality {
+		margin-top: 30px !important;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+
+	}
 }

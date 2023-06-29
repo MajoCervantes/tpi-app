@@ -3,8 +3,6 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import { ENV } from '@/utils/constanrs';
 
-console.log(ENV);
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
 	apiKey: ENV.REACT_APP_FIREBASE_API_KEY,

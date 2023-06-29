@@ -1,8 +1,14 @@
 .ui.basic.label {
-  width: 100%;
-  border: none !important;
-  color: #888fb0 !important;
-  text-align: right !important;
-  margin-bottom: 10px;
-  font-size: 12px !important;
+	width: 100%;
+	border: none !important;
+	color: #888fb0 !important;
+	text-align: right !important;
+	margin-bottom: 10px;
+	font-size: 12px !important;
+}
+
+@media screen and (min-width: 760px) {
+	.ui.basic.label {
+		font-size: 14px !important;
+	}
 }

@@ -75,9 +75,8 @@ export const LoginForm = () => {
 						/>
 					}
 				/>
-
-				<Label basic>¿Olvidaste tu contraseña?</Label>
 			</Form.Group>
+			<Label basic>¿Olvidaste tu contraseña?</Label>
 
 			<Form.Button type='submit' fluid>
 				Iniciar sesión

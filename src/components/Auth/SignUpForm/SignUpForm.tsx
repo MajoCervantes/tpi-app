@@ -70,22 +70,24 @@ export const SignUpForm = () => {
 					error={formik.errors.rfc}
 					icon={<Icon name='address card' />}
 				/>
-				<Label basic className={styles.label}>
-					No sabes cual es tu RFC, consúltalo
-					<Link
-						href={
-							'https://www.sat.gob.mx/aplicacion/31274/consulta-tu-clave-de-rfc-mediante-curp'
-						}>
-						aquí
-					</Link>
-				</Label>
 			</Form.Group>
+			<Label basic className={styles.label}>
+				No sabes cual es tu RFC, consúltalo
+				<Link
+					href={
+						'https://www.sat.gob.mx/aplicacion/31274/consulta-tu-clave-de-rfc-mediante-curp'
+					}>
+					aquí
+				</Link>
+			</Label>
 
-			<label>Nacionalidad</label>
-			<Form.Group className={styles.nationality}>
-				<Checkbox label='Mexicana' />
-				<Checkbox label='Extranjera' />
-			</Form.Group>
+			<div className={styles.nationalityContainer}>
+				<label>Nacionalidad</label>
+				<Form.Group className={styles.nationality}>
+					<Checkbox label='Mexicana' />
+					<Checkbox label='Extranjera' />
+				</Form.Group>
+			</div>
 
 			<Form.Group widths={'equal'}>
 				<Form.Input

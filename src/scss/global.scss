@@ -1,23 +1,7 @@
 @import './colors.scss';
 @import './semantic-ui/index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;600&display=swap');
 
-@font-face {
-  font-family: 'Outfit';
-  font-weight: 100;
-  src: url('/fonts/Outfit-Black.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Outfit';
-  font-weight: 400;
-  src: url('/fonts/Outfit-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Outfit';
-  font-weight: 600;
-  src: url('/fonts/Outfit-Bold.ttf') format('truetype');
-}
 
 * {
   margin: 0;

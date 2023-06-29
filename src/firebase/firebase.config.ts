@@ -1,15 +1,18 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import { ENV } from '@/utils/constanrs';
+
+console.log(ENV);
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-	apiKey: 'AIzaSyCX_nci2fCN7LXsQ3R5pVF4lBf_c2Xe4cc',
-	authDomain: 'diagnostikare-prueba.firebaseapp.com',
-	projectId: 'diagnostikare-prueba',
-	storageBucket: 'diagnostikare-prueba.appspot.com',
-	messagingSenderId: '220329853223',
-	appId: '1:220329853223:web:88c2f6fd0d2565c9962902',
+	apiKey: ENV.REACT_APP_FIREBASE_API_KEY,
+	authDomain: ENV.REACT_APP_FIREBASE_AUTH_DOMAIN,
+	projectId: ENV.REACT_APP_FIREBASE_PROJECT_ID,
+	storageBucket: ENV.REACT_APP_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: ENV.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+	appId: ENV.REACT_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase

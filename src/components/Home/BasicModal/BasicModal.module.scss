@@ -1,0 +1,95 @@
+@import '@/scss/colors.scss';
+
+.modal {
+	> i {
+		color: $text-primary !important;
+	}
+}
+
+.header {
+	> h2 {
+		&:first-of-type {
+			font-weight: 400;
+		}
+
+		&:last-of-type {
+			font-weight: bolder;
+			margin-top: 5px;
+		}
+	}
+	> span {
+		font-size: 12px;
+		color: $text-tertiary;
+		text-transform: capitalize;
+	}
+}
+
+.content {
+	padding: 0 !important;
+	margin-top: 20px;
+	margin: 0 !important;
+	> div {
+		display: flex;
+		align-items: center;
+		font-size: 18px;
+		margin: 50px 0;
+		position: relative;
+		width: 100%;
+
+		> i {
+			margin-right: 10px;
+		}
+
+		&:hover,
+		:active {
+			color: $text-secondary;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				width: 5px;
+				height: 40px;
+				background-color: $text-secondary;
+			}
+		}
+	}
+}
+.footer {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 10px;
+	position: absolute;
+	bottom: 0;
+	color: $text-tertiary;
+}
+
+.slideIn {
+	animation: slideIn 0.5s ease-in-out;
+
+	@keyframes slideIn {
+		0% {
+			transform: translateX(-100%);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+}
+
+.slideOut {
+	animation: slideOut 0.5s ease-in-out;
+
+	@keyframes slideOut {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-100%);
+		}
+	}
+}

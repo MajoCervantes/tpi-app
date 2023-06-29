@@ -1,0 +1,22 @@
+@import './colors.scss';
+@import './semantic-ui/index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit' !important;
+}
+
+body {
+  color: $text-primary;
+}
+
+h2 {
+  margin: 0;
+}
+
+i {
+  font-family: Icons !important;
+}

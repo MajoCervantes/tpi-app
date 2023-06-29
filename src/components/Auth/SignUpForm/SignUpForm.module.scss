@@ -1,0 +1,33 @@
+@import '@/scss/colors.scss';
+
+.checkboxContainer {
+  display: flex;
+  margin-top: 30px;
+  font-size: 12px;
+  width: 100%;
+}
+
+.label {
+  color: #888fb0;
+  >a {
+    color: $text-secondary !important;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 2px;
+  }
+}
+
+.nationality {
+  margin-top: 15px !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  >div {
+    >label {
+      font-size: 15px !important;
+      font-weight: 400 !important;
+    }
+  }
+}

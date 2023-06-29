@@ -2,26 +2,24 @@
 @import './colors.scss';
 @import './semantic-ui/index.scss';
 
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Outfit' !important;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Outfit' !important;
 }
 
 body {
-  color: $text-primary;
-  font-family: 'Outfit' !important;
-  max-width: 100vw;
-  
-
+	color: $text-primary;
+	font-family: 'Outfit' !important;
+	box-sizing: border-box;
+  overflow: hidden;
 }
 
 h2 {
-  margin: 0;
+	margin: 0;
 }
 
 i {
-  font-family: Icons !important;
+	font-family: Icons !important;
 }
